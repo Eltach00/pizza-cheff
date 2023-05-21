@@ -1,10 +1,11 @@
 @import "/src/assets/style/colors.scss";
 
 header {
+  width: 100%;
   margin-bottom: 130px;
   box-shadow: 0 3px 14px 1px rgba(152, 152, 152, 0.2);
   nav {
-    display: grid;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
