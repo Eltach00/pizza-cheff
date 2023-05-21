@@ -1,1 +1,11 @@
-<p>pizza-option works!</p>
+<div class="container">
+  <h1>Выберите свою любимую пиццу</h1>
+  <div class="pizza-container">
+    <div class="pizza" *ngFor="let pizza of pizzas">
+      <img [src]="pizza.img_path" alt="">
+      <h4>{{ pizza.name }}</h4>
+      <p> {{pizza.composition}} </p>
+      <button>В корзину</button>
+    </div>
+  </div>
+</div>

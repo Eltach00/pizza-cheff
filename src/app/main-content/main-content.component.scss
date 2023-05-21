@@ -1,18 +1,15 @@
 @import "/src/assets/style/colors.scss";
 
 .container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: space-around;
-  padding: 0 160px;
+  display: flex;
+  justify-content: space-around;
   gap: 60px;
   align-items: center;
-  justify-items: center;
-  img {
+  .main-pizza {
     display: block;
     max-width: 520px;
     max-height: 340px;
+    object-fit: cover;
   }
 
   .up-text {
@@ -54,19 +51,20 @@
           text-transform: uppercase;
         }
         p {
+          /* Style for "Пиццы гото" */
+          font-size: 16px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: 16px;
+          text-align: left;
+          /* Text style for "Пиццы гото" */
+          font-style: normal;
+          letter-spacing: 0.32px;
+          line-height: normal;
           color: $brown;
         }
       }
-    }
-    button {
-      width: 224px;
-      height: 60px;
-      background-color: $orange;
-      border: 1px solid $orange;
-      color: #382400;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 55px;
     }
   }
 }

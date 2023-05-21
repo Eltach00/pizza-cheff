@@ -1,20 +1,19 @@
 @import "/src/assets/style/colors.scss";
 
 header {
-  width: 100%;
   margin-bottom: 130px;
   box-shadow: 0 3px 14px 1px rgba(152, 152, 152, 0.2);
   nav {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
     align-items: center;
     ul {
       padding: 43px 0;
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(4, auto);
-      gap: 50px;
+      grid-template-columns: repeat(2, 100px) 180px 100px;
       li {
         color: $brown;
       }

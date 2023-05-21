@@ -14,3 +14,18 @@ body {
   background-color: #fff;
   color: $main-black;
 }
+
+.container {
+  padding: 0 300px;
+}
+
+button {
+  width: 224px;
+  height: 60px;
+  background-color: $orange;
+  border: 1px solid $orange;
+  color: #382400;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 55px;
+}

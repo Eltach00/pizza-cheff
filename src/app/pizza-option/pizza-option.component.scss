@@ -1,0 +1,46 @@
+@import "../../assets/style/colors.scss";
+
+.container {
+  margin-top: 150px;
+  h1 {
+    color: $brown;
+    font-size: 35px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  .pizza-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    margin-top: 60px;
+    justify-content: center;
+    gap: 24px;
+    .pizza {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 27px 20px 20px 20px;
+      box-shadow: 0 3px 14px 1px rgba(152, 152, 152, 0.2);
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 55px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 18px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
