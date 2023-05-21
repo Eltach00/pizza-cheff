@@ -1,0 +1,46 @@
+@import "/src/assets/style/colors.scss";
+
+header {
+  margin-bottom: 130px;
+  box-shadow: 0 3px 14px 1px rgba(152, 152, 152, 0.2);
+  nav {
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    ul {
+      padding: 43px 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 50px;
+      li {
+        color: $brown;
+      }
+    }
+  }
+
+  div.logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    img {
+      width: 68px;
+      height: 69px;
+    }
+    div {
+      width: 100px;
+      color: $light-orange;
+      font-size: 24px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: 1.44px;
+      line-height: normal;
+    }
+  }
+}
