@@ -19,6 +19,12 @@ body {
   padding: 0 200px;
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
 button {
   width: 224px;
   height: 60px;

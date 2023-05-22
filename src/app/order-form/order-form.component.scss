@@ -35,6 +35,12 @@
     max-height: 450px;
   }
 
+  @media screen and (max-width: 660px) {
+    img {
+      display: none;
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -54,6 +60,7 @@
     }
     button {
       width: 330px;
+      margin-bottom: 100px;
     }
   }
 }

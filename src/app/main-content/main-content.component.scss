@@ -1,19 +1,25 @@
 @import "/src/assets/style/colors.scss";
 
+@media screen and (max-width: 920px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
 .container {
   display: flex;
-  flex-basis: 520px;
   justify-content: space-around;
-  flex-wrap: wrap;
-  width: auto;
   gap: 60px;
   align-items: center;
   .main-pizza {
-    flex-shrink: 3;
     display: block;
-    max-width: 520px;
-    max-height: 340px;
-    object-fit: cover;
+    max-width: 420px;
+    max-height: 240px;
+  }
+
+  @media screen and (max-width: 660px) {
+    .main-pizza {
+      display: none;
+    }
   }
 
   .up-text {
