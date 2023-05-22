@@ -21,7 +21,8 @@ header {
 
     @media screen and (max-width: 660px) {
       ul {
-        gap: 5px;
+        font-size: 18px;
+        gap: 10px;
         flex-direction: column;
       }
     }

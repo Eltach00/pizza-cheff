@@ -1,10 +1,5 @@
 @import "/src/assets/style/colors.scss";
 
-@media screen and (max-width: 1020px) {
-  .container {
-    flex-wrap: wrap;
-  }
-}
 .container {
   display: flex;
   justify-content: space-around;
@@ -22,6 +17,12 @@
     }
   }
 
+  @media screen and (max-width: 580px) {
+    .up-text {
+      font-size: 20px;
+    }
+  }
+
   .up-text {
     font-size: 35px;
     font-weight: bold;
@@ -35,14 +36,16 @@
     margin-bottom: 50px;
     .color-brown {
       color: $brown;
+      text-align: center;
     }
     .color-orange {
       color: $orange;
+      text-align: center;
     }
   }
   .under-text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     div {
       display: flex;
@@ -74,5 +77,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    flex-wrap: wrap;
   }
 }
