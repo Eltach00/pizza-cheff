@@ -15,6 +15,7 @@ header {
       display: grid;
       grid-template-columns: repeat(2, 100px) 180px 100px;
       li {
+        font-size: 18px;
         color: $brown;
       }
     }

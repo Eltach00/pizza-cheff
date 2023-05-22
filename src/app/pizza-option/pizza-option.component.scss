@@ -13,12 +13,13 @@
   }
 
   .pizza-container {
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
+    display: flex;
     margin-top: 60px;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
     .pizza {
+      width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
