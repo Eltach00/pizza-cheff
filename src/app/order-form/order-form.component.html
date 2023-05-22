@@ -10,13 +10,14 @@
   <form [formGroup]="orderForm">
     <input (ngModelChange)="onInput($event)" formControlName="name" type="text" placeholder="Ваше имя">
     <p *ngIf="orderForm.controls['name'].touched && orderForm.controls['name'].errors?.['required'] "
-      class="validation">Enter your name</p>
+      class="validation">Введите Имя</p>
     <input formControlName="adress" type="text" placeholder="Адрес доставки">
     <p *ngIf="orderForm.controls['adress'].touched && orderForm.controls['adress'].errors?.['required'] "
-      class="validation">Enter your adress</p>
+      class="validation">Введите адрес</p>
     <input formControlName="number" type="text" placeholder="Телефон" [imask]="{ mask: '+{7} (000) 000-00-00' }">
     <p *ngIf="orderForm.controls['number'].touched && orderForm.controls['number'].errors?.['required'] "
-      class="validation">Enter your number</p>
+      class="validation">Введите номер</p>
+    <p *ngIf="error" class="validation">Введите данные</p>
     <button (click)="submit()">Оформить Заказ</button>
   </form>
   <img src="../../assets/pictures/slice.png" />

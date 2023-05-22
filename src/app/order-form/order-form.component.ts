@@ -10,6 +10,7 @@ import { SnackBarComponent } from '../snack-bar/snack-bar.component';
 })
 export class OrderFormComponent {
   orderForm: FormGroup;
+  error: boolean = false;
 
   constructor(private _snackBar: MatSnackBar) {
     this.orderForm = new FormGroup({
@@ -31,6 +32,11 @@ export class OrderFormComponent {
   }
 
   submit() {
+    if (this.orderForm.invalid) {
+      this.error = true;
+      return;
+    }
+    this.error = false;
     const order = {
       name: this.orderForm.value.name,
       number: this.orderForm.value.number,
