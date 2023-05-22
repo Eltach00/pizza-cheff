@@ -17,12 +17,6 @@
     }
   }
 
-  @media screen and (max-width: 580px) {
-    .up-text {
-      font-size: 20px;
-    }
-  }
-
   .up-text {
     font-size: 35px;
     font-weight: bold;
@@ -44,8 +38,8 @@
     }
   }
   .under-text {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
     div {
       display: flex;
@@ -76,6 +70,13 @@
           color: $brown;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .under-text {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
