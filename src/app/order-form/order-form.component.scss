@@ -1,7 +1,7 @@
 .container {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: 400px 330px 350px;
+  grid-template-columns: repeat(3, auto);
   justify-items: center;
   align-items: center;
   gap: 70px;
@@ -32,7 +32,34 @@
   }
 
   img {
+    object-fit: cover;
     max-width: 410px;
     max-height: 450px;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    input {
+      width: 330px;
+      height: 60px;
+      padding-left: 22px;
+      border: 1px solid #b99150;
+      background-color: #ffffff;
+      font-size: 18px;
+
+      &::placeholder {
+        color: #b99150;
+      }
+    }
+    button {
+      width: 330px;
+    }
+  }
+}
+
+.validation {
+  color: red;
 }

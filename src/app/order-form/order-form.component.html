@@ -7,11 +7,17 @@
       чтобы
       наш клиент был доволен и не остался голодный!</p>
   </div>
-  <form>
-    <input type="text" placeholder="Ваше имя">
-    <input type="text" placeholder="Адрес доставки">
-    <input type="text" placeholder="Телефон">
-    <button>Оформить Заказ</button>
+  <form [formGroup]="orderForm">
+    <input (ngModelChange)="onInput($event)" formControlName="name" type="text" placeholder="Ваше имя">
+    <p *ngIf="orderForm.controls['name'].touched && orderForm.controls['name'].errors?.['required'] "
+      class="validation">Enter your name</p>
+    <input formControlName="adress" type="text" placeholder="Адрес доставки">
+    <p *ngIf="orderForm.controls['adress'].touched && orderForm.controls['adress'].errors?.['required'] "
+      class="validation">Enter your adress</p>
+    <input formControlName="number" type="text" placeholder="Телефон" [imask]="{ mask: '+{7} (000) 000-00-00' }">
+    <p *ngIf="orderForm.controls['number'].touched && orderForm.controls['number'].errors?.['required'] "
+      class="validation">Enter your number</p>
+    <button (click)="submit()">Оформить Заказ</button>
   </form>
   <img src="../../assets/pictures/slice.png" />
 </div>
