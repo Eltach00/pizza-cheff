@@ -2,8 +2,8 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   gap: 70px;
+
   .texts {
     h2 {
       font-size: 35px;
@@ -29,16 +29,8 @@
   }
 
   img {
-    flex: 5;
-    object-fit: cover;
-    max-width: 410px;
-    max-height: 450px;
-  }
-
-  @media screen and (max-width: 660px) {
-    img {
-      display: none;
-    }
+    max-width: 310px;
+    max-height: 350px;
   }
 
   form {
@@ -67,4 +59,13 @@
 
 .validation {
   color: red;
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  img {
+    display: none;
+  }
 }
